@@ -1,1 +1,591 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Pizza 23 – Pizza in Wien 1230</title>
+
+  <meta name="description" content="Pizza 23 in Wien 1230 – 48 Stunden gereifter Teig, San-Marzano-Tomaten und Fior di Latte. Abholung und Lieferservice.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0b0b;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* HEADER */
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.78)),
+        url("images/pizza23.jpg") center/cover;
+    }
+
+    .hero {
+      max-width: 800px;
+    }
+
+    .hero small {
+      color: #f5c400;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .hero h1 {
+      font-size: clamp(55px, 13vw, 110px);
+      line-height: .9;
+      margin: 15px 0;
+      font-weight: 900;
+    }
+
+    .hero h1 span {
+      color: #f5c400;
+    }
+
+    .hero p {
+      font-size: 19px;
+      color: #ddd;
+      margin: 25px auto;
+      max-width: 650px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 23px;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: .25s;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+    }
+
+    .yellow {
+      background: #f5c400;
+      color: #000;
+    }
+
+    .dark {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.25);
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title span {
+      color: #f5c400;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(35px, 7vw, 55px);
+      margin-top: 8px;
+    }
+
+    /* ABOUT */
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+
+    .about-text h2 {
+      font-size: 38px;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      color: #ccc;
+      font-size: 18px;
+    }
+
+    .highlight {
+      color: #f5c400;
+      font-weight: bold;
+    }
+
+    /* INFO */
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: #151515;
+      border: 1px solid #292929;
+      border-radius: 20px;
+      padding: 28px;
+    }
+
+    .card h3 {
+      color: #f5c400;
+      margin-bottom: 12px;
+      font-size: 21px;
+    }
+
+    .card p {
+      color: #ccc;
+    }
+
+    /* OPENING */
+
+    .opening {
+      background: #121212;
+      border-radius: 25px;
+      padding: 35px;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .day {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 14px 0;
+      border-bottom: 1px solid #292929;
+    }
+
+    .day:last-child {
+      border-bottom: none;
+    }
+
+    .day strong {
+      color: #fff;
+    }
+
+    .day span {
+      color: #f5c400;
+      text-align: right;
+    }
+
+    /* GALLERY */
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 20px;
+      transition: .3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.02);
+    }
+
+    /* CONTACT */
+
+    .contact {
+      text-align: center;
+      background: linear-gradient(135deg, #151515, #0d0d0d);
+      border-radius: 30px;
+      padding: 55px 25px;
+    }
+
+    .contact h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .contact p {
+      color: #ccc;
+      margin-bottom: 10px;
+    }
+
+    .phone {
+      color: #f5c400;
+      font-size: 25px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    /* FOOTER */
+
+    footer {
+      text-align: center;
+      padding: 35px 20px;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+
+    footer strong {
+      color: #fff;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 750px) {
+
+      .about {
+        grid-template-columns: 1fr;
+      }
+
+      .about img {
+        height: 330px;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery img {
+        height: 280px;
+      }
+
+      .opening {
+        padding: 25px 18px;
+      }
+
+      .day {
+        font-size: 14px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<header>
+
+  <div class="hero">
+
+    <small>AUTHENTISCHE PIZZA • WIEN 1230</small>
+
+    <h1>PIZZA <span>23</span></h1>
+
+    <p>
+      48 Stunden gereifter Teig, San-Marzano-Tomaten,
+      Fior di Latte aus Neapel und echte italienische Leidenschaft.
+    </p>
+
+    <div class="buttons">
+
+      <a
+        class="button yellow"
+        href="tel:+436601853435">
+        📞 Jetzt anrufen
+      </a>
+
+      <a
+        class="button dark"
+        href="https://www.google.com/maps/search/?api=1&query=Breitenfurterstraße+244,+1230+Wien"
+        target="_blank">
+        📍 Route mit Google Maps
+      </a>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- ÜBER UNS -->
+
+<section>
+
+  <div class="section-title">
+    <span>Pizza 23</span>
+    <h2>Einfach gute Pizza.</h2>
+  </div>
+
+  <div class="about">
+
+    <img src="images/pizza23-pizza.jpg" alt="Pizza bei Pizza 23">
+
+    <div class="about-text">
+
+      <h2>48 Stunden. Viel Liebe.</h2>
+
+      <p>
+        Eine gute Pizza braucht nicht viel:
+        <span class="highlight">48 Stunden gereifter Teig</span>,
+        Tomaten aus San Marzano mit echter Qualität und
+        Fior di Latte aus Neapel.
+      </p>
+
+      <br>
+
+      <p>
+        Bei 400 Grad Celsius heiß geschmort und natürlich
+        mit viel Liebe und Qualität zubereitet.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- INFORMATIONEN -->
+
+<section>
+
+  <div class="section-title">
+    <span>Das Wichtigste</span>
+    <h2>Pizza 23</h2>
+  </div>
+
+  <div class="info-grid">
+
+    <div class="card">
+      <h3>📍 Adresse</h3>
+      <p>
+        Breitenfurterstraße 244<br>
+        1230 Wien
+      </p>
+
+      <br>
+
+      <a
+        class="button yellow"
+        href="https://www.google.com/maps/search/?api=1&query=Breitenfurterstraße+244,+1230+Wien"
+        target="_blank">
+        Route öffnen
+      </a>
+    </div>
+
+
+    <div class="card">
+      <h3>📞 Kontakt</h3>
+
+      <p>Telefon:</p>
+
+      <br>
+
+      <a
+        class="button yellow"
+        href="tel:+436601853435">
+        0660 1853435
+      </a>
+    </div>
+
+
+    <div class="card">
+      <h3>🚗 Service</h3>
+
+      <p>
+        Abholung oder Lieferservice
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ÖFFNUNGSZEITEN -->
+
+<section>
+
+  <div class="section-title">
+    <span>Wann wir da sind</span>
+    <h2>Öffnungszeiten</h2>
+  </div>
+
+  <div class="opening">
+
+    <div class="day">
+      <strong>Montag</strong>
+      <span>11:00–14:00<br>16:30–22:00</span>
+    </div>
+
+    <div class="day">
+      <strong>Dienstag</strong>
+      <span>11:00–14:00<br>16:30–22:00</span>
+    </div>
+
+    <div class="day">
+      <strong>Mittwoch</strong>
+      <span>11:00–14:00<br>16:30–22:30</span>
+    </div>
+
+    <div class="day">
+      <strong>Donnerstag</strong>
+      <span>11:00–14:00<br>16:30–23:00</span>
+    </div>
+
+    <div class="day">
+      <strong>Freitag</strong>
+      <span>16:30–23:30</span>
+    </div>
+
+    <div class="day">
+      <strong>Samstag</strong>
+      <span>16:30–23:30</span>
+    </div>
+
+    <div class="day">
+      <strong>Sonntag</strong>
+      <span>11:00–22:00</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- GALERIE -->
+
+<section>
+
+  <div class="section-title">
+    <span>Unsere Pizza</span>
+    <h2>Galerie</h2>
+  </div>
+
+  <div class="gallery">
+
+    <img
+      src="images/pizza23.jpg"
+      alt="Pizza 23 Lokal">
+
+    <img
+      src="images/pizza23-pizza.jpg"
+      alt="Pizza bei Pizza 23">
+
+    <img
+      src="images/pizza23-logo.jpg"
+      alt="Pizza 23">
+
+    <img
+      src="images/pizza23-speisekarte.jpg"
+      alt="Speisekarte Pizza 23">
+
+  </div>
+
+</section>
+
+
+<!-- KONTAKT -->
+
+<section>
+
+  <div class="contact">
+
+    <h2>Hunger auf Pizza?</h2>
+
+    <p>
+      Bestell deine Pizza oder komm direkt vorbei.
+    </p>
+
+    <p>
+      Breitenfurterstraße 244, 1230 Wien
+    </p>
+
+    <div class="phone">
+      0660 1853435
+    </div>
+
+    <div class="buttons">
+
+      <a
+        class="button yellow"
+        href="tel:+436601853435">
+        📞 Jetzt anrufen
+      </a>
+
+      <a
+        class="button dark"
+        href="https://www.google.com/maps/search/?api=1&query=Breitenfurterstraße+244,+1230+Wien"
+        target="_blank">
+        📍 Google Maps
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <p>
+    © 2026 <strong>Pizza 23</strong> · Wien 1230
+  </p>
+
+  <p>
+    Breitenfurterstraße 244 · 1230 Wien
+  </p>
+
+</footer>
+
+</body>
+</html>
