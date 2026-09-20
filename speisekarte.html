@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pizza 23 – Speisekarte</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #0b0b0b;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: auto;
+      padding: 25px 18px 60px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 42px;
+      margin: 10px 0 5px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #aaa;
+      font-size: 17px;
+      margin-bottom: 25px;
+    }
+
+    .back {
+      display: block;
+      width: fit-content;
+      margin: 0 auto 40px;
+      padding: 13px 25px;
+      background: #f5b400;
+      color: #111;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    .category {
+      margin-bottom: 45px;
+    }
+
+    .category h2 {
+      font-size: 31px;
+      color: #fff;
+      border-bottom: 1px solid #8d6a24;
+      padding-bottom: 12px;
+      margin-bottom: 10px;
+    }
+
+    .item {
+      padding: 15px 0;
+      border-bottom: 1px solid #292929;
+    }
+
+    .item-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .name {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .price {
+      font-size: 19px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .description {
+      color: #aaa;
+      font-size: 15px;
+      margin-top: 6px;
+      line-height: 1.45;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 34px;
+      }
+
+      .category h2 {
+        font-size: 27px;
+      }
+
+      .name {
+        font-size: 18px;
+      }
+
+      .price {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>🍕 PIZZA 23</h1>
+
+  <p class="subtitle">
+    Pizza • Pasta • Insalate • Desserts • Drinks
+  </p>
+
+  <a href="index.html" class="back">← Zur Startseite</a>
+
+
+  <!-- ==================== PIZZA ==================== -->
+
+  <div class="category">
+
+    <h2>🍕 Pizza</h2>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Cardinale Pizza</span>
+        <span class="price">11,50 €</span>
+      </div>
+      <div class="description">
+        Klassische Pizza mit cremiger Mozzarella und Fior di Latte,
+        belegt mit zartem Puten-Schinken
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Giardino</span>
+        <span class="price">12,50 €</span>
+      </div>
+      <div class="description">
+        Tomatensauce, Mozzarella Fior di Latte (Italien),
+        Artischocken, frische Champignons
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Occhio di Bue Speciale</span>
+        <span class="price">12,90 €</span>
+      </div>
+      <div class="description">
+        Tomatensauce, Mozzarella Fior di Latte (Italien)
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Bolognese & Burrata</span>
+        <span class="price">16,50 €</span>
+      </div>
+      <div class="description">
+        Rindfleisch Bolognese, Burrata, Fior di Latte
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Bolognese</span>
+        <span class="price">12,50 €</span>
+      </div>
+      <div class="description">
+        Köstliche Pizza Bolognese mit zartem Rinderhackfleisch,
+        würziger Tomatensauce
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Tono</span>
+        <span class="price">13,50 €</span>
+      </div>
+      <div class="description">
+        Köstliche Pizza mit zartem Thunfisch, knusprigen Zwiebeln
+        und saftigen Oliven
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Pizza Cardinale</span>
+        <span class="price">12,00 €</span>
+      </div>
+      <div class="description">
+        Mozzarella, Fior di Latte und Schinken Pute
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Pizza Frutti di Mare</span>
+        <span class="price">13,90 €</span>
+      </div>
+      <div class="description">
+        Mozzarella, Fior di Latte
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Pizza Burrata</span>
+        <span class="price">15,50 €</span>
+      </div>
+      <div class="description">
+        Mozzarella, Fior di Latte, Rucola und Grana
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Pizza Focaccia della Nonna</span>
+        <span class="price">5,00 €</span>
+      </div>
+      <div class="description">
+        Traditionelle Pizza Focaccia mit aromatischem Rosmarin
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Pizza Regina Margherita</span>
+        <span class="price">10,50 €</span>
+      </div>
+      <div class="description">
+        Mozzarella und Fior di Latte
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Pizza Cipolla</span>
+        <span class="price">10,90 €</span>
+      </div>
+      <div class="description">
+        Mozzarella, Fior di Latte und Zwiebel
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Pizza Rucola</span>
+        <span class="price">11,50 €</span>
+      </div>
+      <div class="description">
+        Mozzarella, Fior di Latte, Rucola und Grana
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Pizza Funghi</span>
+        <span class="price">11,50 €</span>
+      </div>
+      <div class="description">
+        Mozzarella, Fior di Latte und frische Champignons
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Pizza Salami</span>
+        <span class="price">11,90 €</span>
+      </div>
+      <div class="description">
+        Mozzarella, Fior di Latte und Salami Rind
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Pizza Diavolo</span>
+        <span class="price">12,90 €</span>
+      </div>
+      <div class="description">
+        Mozzarella, Fior di Latte, Salami Rind und Peperoni
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Pizza Toskana</span>
+        <span class="price">11,50 €</span>
+      </div>
+      <div class="description">
+        Mozzarella, Fior di Latte, Schinken Pute und Champignons
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Pizza 23</span>
+        <span class="price">12,90 €</span>
+      </div>
+      <div class="description">
+        Mozzarella, Fior di Latte, Schinken Pute, Salami Rind,
+        Rinderspeck und Mais
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Pizza Baby Spinaci</span>
+        <span class="price">11,50 €</span>
+      </div>
+      <div class="description">
+        Mozzarella, Fior di Latte, Schafskäse und Spinat
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Pizza Venezia</span>
+        <span class="price">11,90 €</span>
+      </div>
+      <div class="description">
+        Mozzarella, Fior di Latte, Cherry Tomaten und Oliven
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Pizza Provinciale</span>
+        <span class="price">12,90 €</span>
+      </div>
+      <div class="description">
+        Mozzarella Fior di Latte, Schinken Pute, Rinderspeck,
+        Mais und Peperoni
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Pizza della Casa</span>
+        <span class="price">12,90 €</span>
+      </div>
+      <div class="description">
+        Mozzarella Fior di Latte, Salami Rind, Champignons,
+        Zwiebeln und Mais
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Pizza Quattro Formaggi</span>
+        <span class="price">12,50 €</span>
+      </div>
+      <div class="description">
+        Tomatensauce, vier Käsesorten
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Pizza Gamberetti e Rucola</span>
+        <span class="price">16,90 €</span>
+      </div>
+      <div class="description">
+        Mozzarella, Fior di Latte, Garnelen und Rucola
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Quattro Stagioni</span>
+        <span class="price">12,90 €</span>
+      </div>
+      <div class="description">
+        Fior di Latte, Artischocken, Oliven und Champignons
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Pizza Fruti di Mare</span>
+        <span class="price">14,90 €</span>
+      </div>
+      <div class="description">
+        Mozzarella, Fior di Latte, Meeresfrüchte
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Hawaii</span>
+        <span class="price">12,50 €</span>
+      </div>
+      <div class="description">
+        Mozzarella und Fior di Latte, Ananas, Puten-Schinken
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Burrata</span>
+        <span class="price">15,50 €</span>
+      </div>
+      <div class="description">
+        Mozzarella und Fior di Latte, Rucola und Grana Padano
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ==================== INSALATE ==================== -->
+
+  <div class="category">
+
+    <h2>🥗 Insalate</h2>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Burrata</span>
+        <span class="price">11,90 €</span>
+      </div>
+      <div class="description">
+        Burrata mit Rucola und Cherrytomaten
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Insalate Tono</span>
+        <span class="price">10,90 €</span>
+      </div>
+      <div class="description">
+        Thunfischsalat
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Insalate Greca</span>
+        <span class="price">10,90 €</span>
+      </div>
+      <div class="description">
+        Griechischer Salat
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ==================== PASTA ==================== -->
+
+  <div class="category">
+
+    <h2>🍝 Pasta</h2>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Gnocchi alla Sorrentina</span>
+        <span class="price">13,90 €</span>
+      </div>
+      <div class="description">
+        Tomatensauce, Mozzarella Fior di Latte und Basilikum
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ==================== DESSERTS ==================== -->
+
+  <div class="category">
+
+    <h2>🍰 Desserts</h2>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Cheesecake</span>
+        <span class="price">7,90 €</span>
+      </div>
+      <div class="description">
+        Nach Art des Hauses
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Mohr im Hemd</span>
+        <span class="price">7,90 €</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Tiramisu</span>
+        <span class="price">7,90 €</span>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ==================== GETRÄNKE ==================== -->
+
+  <div class="category">
+
+    <h2>🥤 Getränke</h2>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Eistee Zitrone</span>
+        <span class="price">2,60 €</span>
+      </div>
+      <div class="description">
+        Erfrischendes Eistee-Getränk mit intensivem Zitronengeschmack
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Eistee Pfirsich</span>
+        <span class="price">2,60 €</span>
+      </div>
+      <div class="description">
+        Erfrischender Eistee mit intensivem Pfirsicharoma
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Fanta Orange</span>
+        <span class="price">2,60 €</span>
+      </div>
+      <div class="description">
+        Flaschenpfand: 0,25 €
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Cola Zero 0,33 l</span>
+        <span class="price">2,60 €</span>
+      </div>
+      <div class="description">
+        Erfrischender Cola-Geschmack ganz ohne Zucker
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Cola 0,33 l</span>
+        <span class="price">2,60 €</span>
+      </div>
+      <div class="description">
+        Klassisches koffeinhaltiges Erfrischungsgetränk
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top">
+        <span class="name">Red Bull</span>
+        <span class="price">3,50 €</span>
+      </div>
+      <div class="description">
+        Koffeinhaltiger Energy Drink
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="category">
+    <h2>📞 Veranstaltungen & Parties</h2>
+
+    <div class="description">
+      Für Veranstaltungen und Parties bitte mindestens
+      <strong>1 Tag vorher</strong> telefonisch anmelden.
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
