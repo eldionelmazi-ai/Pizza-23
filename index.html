@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pizza 23 – Wien Liesing</title>
+
+  <meta name="description"
+        content="Pizza 23 – Pizza, Pasta, Salate und italienischer Genuss in Wien Liesing.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #080808;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 25px 30px;
+      border-bottom: 1px solid #222;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 42px;
+      font-weight: 900;
+      letter-spacing: -2px;
+    }
+
+    .logo span {
+      color: #e52525;
+    }
+
+    .flag {
+      width: 210px;
+      height: 7px;
+      margin-top: 8px;
+      background: linear-gradient(
+        to right,
+        #009246 33%,
+        white 33%,
+        white 66%,
+        #ce2b37 66%
+      );
+    }
+
+    .menu-icon {
+      font-size: 35px;
+    }
+
+    .hero {
+      max-width: 900px;
+      margin: 35px auto;
+      padding: 50px 25px;
+      text-align: center;
+      border: 1px solid #292929;
+      border-radius: 30px;
+      background: #111;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 22px;
+      color: #ccc;
+      margin-bottom: 35px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      background: #ffc400;
+      color: #111;
+      padding: 18px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 19px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #ffdb4d;
+    }
+
+    .info {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      margin-top: 45px;
+      flex-wrap: wrap;
+    }
+
+    .info div {
+      max-width: 220px;
+    }
+
+    .info strong {
+      display: block;
+      font-size: 19px;
+      margin-bottom: 5px;
+    }
+
+    .info span {
+      color: #bbb;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 70px auto;
+      padding: 0 25px;
+    }
+
+    section h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      color: #ccc;
+      font-size: 19px;
+      margin-bottom: 30px;
+    }
+
+    /* MEHRERE BILDER */
+    .bilder {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .bilder img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 20px;
+      display: block;
+    }
+
+    .bilder img:first-child {
+      grid-column: span 2;
+      height: 450px;
+    }
+
+    .karte-button {
+      text-align: center;
+      margin-top: 35px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      border-top: 1px solid #222;
+      color: #888;
+    }
+
+    @media (max-width: 650px) {
+
+      header {
+        padding: 20px;
+      }
+
+      .logo {
+        font-size: 32px;
+      }
+
+      .flag {
+        width: 160px;
+      }
+
+      .hero {
+        margin: 20px 15px;
+        padding: 40px 20px;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero p {
+        font-size: 19px;
+      }
+
+      section {
+        margin: 50px auto;
+      }
+
+      section h2 {
+        font-size: 32px;
+      }
+
+      .bilder {
+        grid-template-columns: 1fr;
+      }
+
+      .bilder img:first-child {
+        grid-column: span 1;
+        height: 300px;
+      }
+
+      .bilder img {
+        height: 250px;
+      }
+
+      .info {
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div>
+      <div class="logo">
+        PIZZA<span>23</span>
+      </div>
+
+      <div class="flag"></div>
+    </div>
+
+    <div class="menu-icon">☰</div>
+  </header>
+
+
+  <!-- STARTSEITE -->
+  <div class="hero">
+
+    <h1>🍕 Pizza 23</h1>
+
+    <p>
+      Pizza, Salate & italienischer Genuss in Wien Liesing.
+    </p>
+
+    <div class="buttons">
+
+      <!-- SPEISEKARTE -->
+      <a href="speisekarte.html" class="button">
+        🍕 Speisekarte ansehen
+      </a>
+
+      <!-- TELEFON -->
+      <a href="tel:+436601853435" class="button">
+        📞 Jetzt anrufen
+      </a>
+
+      <!-- GOOGLE MAPS -->
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=Pizza+23,+Breitenfurter+Straße+244,+1230+Wien"
+        target="_blank"
+        class="button">
+        📍 Google Maps
+      </a>
+
+    </div>
+
+
+    <div class="info">
+
+      <div>
+        <strong>📍 Wien 1230</strong>
+        <span>Breitenfurter Straße 244</span>
+      </div>
+
+      <div>
+        <strong>🕐 Öffnungszeiten</strong>
+        <span>Täglich für euch da</span>
+      </div>
+
+      <div>
+        <strong>❤️ Italienischer Geschmack</strong>
+        <span>Pizza mit Qualität</span>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- UNSERE PIZZA -->
+  <section>
+
+    <h2>Unsere Pizza</h2>
+
+    <p>
+      Eine gute Pizza braucht nicht viel:
+      48 Stunden gereifter Teig, Tomaten aus San Marzano,
+      echte Fior di Latte Mozzarella aus Neapel,
+      ein 400 °C heißer Schamott und natürlich viel Liebe
+      und Qualität.
+    </p>
+
+
+    <!--
+      ==================================================
+      HIER KANNST DU DEINE BILDER EINFACH ÄNDERN
+      ==================================================
+
+      Wenn du ein neues Bild hochlädst, z.B.
+
+      IMG_3840.jpeg
+
+      dann schreibst du einfach:
+
+      <img src="IMG_3840.jpeg" alt="Pizza 23">
+
+      ==================================================
+    -->
+
+    <div class="bilder">
+
+      <img src="IMG_3837.jpeg" alt="Pizza 23">
+
+      <img src="IMG_3838.jpeg" alt="Pizza bei Pizza 23">
+
+      <img src="IMG_3839.jpeg" alt="Pizza 23 Restaurant">
+
+      <img src="IMG_3840.jpeg" alt="Pizza 23">
+
+      <img src="IMG_3841.jpeg" alt="Pizza">
+
+      <img src="IMG_3842.jpeg" alt="Pizza 23">
+
+    </div>
+
+  </section>
+
+
+  <!-- UNSER RESTAURANT -->
+  <section>
+
+    <h2>Pizza 23</h2>
+
+    <p>
+      Italienischer Genuss in Wien Liesing.
+      Besucht uns und entdeckt unsere Pizza,
+      Pasta, Insalate, Desserts und Getränke.
+    </p>
+
+    <div class="karte-button">
+
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=Pizza+23,+Breitenfurter+Straße+244,+1230+Wien"
+        target="_blank"
+        class="button">
+        📍 Route mit Google Maps
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+    © 2026 Pizza 23 · Wien 1230
+  </footer>
+
+</body>
+</html>
