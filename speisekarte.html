@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Speisekarte</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #0b0b0b;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px 60px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #aaa;
+      margin-bottom: 40px;
+      font-size: 17px;
+    }
+
+    .category {
+      margin-bottom: 45px;
+    }
+
+    .category h2 {
+      font-size: 30px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+    }
+
+    .item {
+      padding: 18px 0;
+      border-bottom: 1px solid #292929;
+    }
+
+    .item-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .name {
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .description {
+      color: #aaa;
+      font-size: 16px;
+      margin-top: 8px;
+      line-height: 1.5;
+    }
+
+    .back {
+      display: block;
+      width: fit-content;
+      margin: 0 auto 35px;
+      padding: 13px 24px;
+      background: #f5b400;
+      color: #111;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 34px;
+      }
+
+      .category h2 {
+        font-size: 26px;
+      }
+
+      .name {
+        font-size: 18px;
+      }
+
+      .price {
+        font-size: 18px;
+      }
+
+      .description {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>🍽️ Speisekarte</h1>
+
+    <p class="subtitle">
+      Entdecke unsere Pizza, Insalate, Pasta, Desserts und Getränke.
+    </p>
+
+    <a href="index.html" class="back">← Zur Startseite</a>
+
+
+    <!-- ==================== PIZZA ==================== -->
+
+    <div class="category">
+
+      <h2>🍕 Pizza</h2>
+
+      <div class="item">
+        <div class="item-top">
+          <span class="name">Gamberetti e Rucola</span>
+          <span class="price">16,90 €</span>
+        </div>
+        <div class="description">
+          Mozzarella, Fior di Latte, Garnelen und Rucola
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-top">
+          <span class="name">Quattro Stagioni</span>
+          <span class="price">12,90 €</span>
+        </div>
+        <div class="description">
+          Fior di Latte, Artischocken, Oliven und Champignons
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-top">
+          <span class="name">Hawaii</span>
+          <span class="price">12,50 €</span>
+        </div>
+        <div class="description">
+          Mozzarella, Fior di Latte, Ananas und Puten-Schinken
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-top">
+          <span class="name">Burrata</span>
+          <span class="price">15,50 €</span>
+        </div>
+        <div class="description">
+          Mozzarella, Fior di Latte, Rucola und Grana Padano
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-top">
+          <span class="name">Focaccia della Nonna</span>
+          <span class="price">5,00 €</span>
+        </div>
+        <div class="description">
+          Traditionelle Focaccia mit Rosmarin
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ==================== INSALATE ==================== -->
+
+    <div class="category">
+
+      <h2>🥗 Insalate</h2>
+
+      <div class="item">
+        <div class="item-top">
+          <span class="name">Burrata</span>
+          <span class="price">11,90 €</span>
+        </div>
+        <div class="description">
+          Burrata mit Rucola und Cherrytomaten
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-top">
+          <span class="name">Insalate Tono</span>
+          <span class="price">10,90 €</span>
+        </div>
+        <div class="description">
+          Thunfischsalat
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ==================== PASTA ==================== -->
+
+    <div class="category">
+
+      <h2>🍝 Pasta</h2>
+
+      <div class="item">
+        <div class="item-top">
+          <span class="name">Gnocchi alla Sorrentina</span>
+          <span class="price">13,90 €</span>
+        </div>
+        <div class="description">
+          Tomatensauce, Mozzarella Fior di Latte und Basilikum
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ==================== DESSERTS ==================== -->
+
+    <div class="category">
+
+      <h2>🍰 Desserts</h2>
+
+      <div class="item">
+        <div class="item-top">
+          <span class="name">Cheesecake</span>
+          <span class="price">7,90 €</span>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-top">
+          <span class="name">Mohr im Hemd</span>
+          <span class="price">7,90 €</span>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-top">
+          <span class="name">Tiramisu</span>
+          <span class="price">7,90 €</span>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ==================== GETRÄNKE ==================== -->
+
+    <div class="category">
+
+      <h2>🥤 Getränke</h2>
+
+      <div class="item">
+        <div class="item-top">
+          <span class="name">Eistee Zitrone</span>
+          <span class="price">2,60 €</span>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-top">
+          <span class="name">Eistee Pfirsich</span>
+          <span class="price">2,60 €</span>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-top">
+          <span class="name">Fanta Orange</span>
+          <span class="price">2,60 €</span>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-top">
+          <span class="name">Cola Zero 0,33 l</span>
+          <span class="price">2,60 €</span>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-top">
+          <span class="name">Cola 0,33 l</span>
+          <span class="price">2,60 €</span>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-top">
+          <span class="name">Red Bull</span>
+          <span class="price">3,50 €</span>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ==================== VERANSTALTUNGEN ==================== -->
+
+    <div class="category">
+
+      <h2>📞 Veranstaltungen & Parties</h2>
+
+      <div class="description">
+        Für Veranstaltungen und Parties bitte mindestens
+        <strong>1 Tag vorher</strong> telefonisch anmelden.
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
