@@ -1,1 +1,232 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pizza 23 – Wien Liesing</title>
+
+  <meta name="description" content="Pizza 23 in Wien Liesing – 48 Stunden gereifter Teig, San Marzano Tomaten und Fior di Latte Mozzarella. Abholung und Lieferservice.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0b;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px 20px;
+      background:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.75)),
+        url("images/pizza23.jpg") center/cover;
+    }
+
+    .hero {
+      max-width: 800px;
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 12vw, 90px);
+      margin-bottom: 10px;
+      font-weight: 900;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #ddd;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: .2s;
+    }
+
+    .call {
+      background: #eab308;
+      color: #111;
+    }
+
+    .maps {
+      background: white;
+      color: #111;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    h2 {
+      font-size: 38px;
+      margin-bottom: 20px;
+    }
+
+    .text {
+      color: #ccc;
+      font-size: 18px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 18px;
+    }
+
+    .info {
+      background: #151515;
+      border-radius: 22px;
+      padding: 30px;
+      margin-top: 30px;
+    }
+
+    .info p {
+      margin: 10px 0;
+      color: #ddd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #050505;
+      color: #999;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        min-height: 80vh;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="hero">
+    <h1>Pizza 23</h1>
+
+    <p>
+      48 Stunden gereifter Teig · San Marzano Tomaten ·
+      Fior di Latte Mozzarella
+    </p>
+
+    <div class="buttons">
+      <a class="button call" href="tel:+436601853435">
+        📞 Jetzt anrufen
+      </a>
+
+      <a class="button maps"
+         href="https://www.google.com/maps/search/?api=1&query=Breitenfurterstraße+244,+1230+Wien"
+         target="_blank">
+        📍 Google Maps
+      </a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <h2>Unsere Pizza</h2>
+
+  <p class="text">
+    Eine gute Pizza braucht nicht viel. 48 Stunden gereifter Teig,
+    Tomaten aus San Marzano, echte Fior di Latte Mozzarella aus Neapel,
+    bei 400 Grad Celsius heiß geschmort und natürlich viel Liebe und Qualität.
+  </p>
+
+  <div class="gallery">
+    <img src="images/pizza23-pizza.jpg" alt="Pizza von Pizza 23">
+    <img src="images/pizza23.jpg" alt="Pizza 23 Lokal">
+    <img src="images/pizza23-logo.jpg" alt="Pizza 23">
+    <img src="images/pizza23-speisekarte.jpg" alt="Speisekarte Pizza 23">
+  </div>
+</section>
+
+<section>
+  <h2>Öffnungszeiten</h2>
+
+  <div class="info">
+    <p><strong>Montag:</strong> 11:00–14:00 & 16:30–22:00</p>
+    <p><strong>Dienstag:</strong> 11:00–14:00 & 16:30–22:00</p>
+    <p><strong>Mittwoch:</strong> 11:00–14:00 & 16:30–22:30</p>
+    <p><strong>Donnerstag:</strong> 11:00–14:00 & 16:30–23:00</p>
+    <p><strong>Freitag:</strong> 16:30–23:30</p>
+    <p><strong>Samstag:</strong> 16:30–23:30</p>
+    <p><strong>Sonntag:</strong> 11:00–22:00</p>
+  </div>
+</section>
+
+<section>
+  <h2>Kontakt</h2>
+
+  <div class="info">
+    <p>📞 <strong>0660 1853435</strong></p>
+    <p>📍 Breitenfurterstraße 244, 1230 Wien</p>
+    <p>🍕 Abholung oder Lieferservice</p>
+
+    <div class="buttons" style="margin-top:25px;">
+      <a class="button call" href="tel:+436601853435">
+        Jetzt anrufen
+      </a>
+
+      <a class="button maps"
+         href="https://www.google.com/maps/search/?api=1&query=Breitenfurterstraße+244,+1230+Wien"
+         target="_blank">
+        Adresse öffnen
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Pizza 23 · Wien Liesing
+</footer>
+
+</body>
+</html>
 
